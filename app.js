@@ -9,7 +9,6 @@ var helmet = require('helmet');
 var cors = require('cors');
 var compression = require('compression');
 
-var validator = require('validator');
 var PropertiesReader = require('properties-reader');
 var path = require('path');
 var properties = PropertiesReader(path.join(__dirname,'/config/application.properties'));
