@@ -2,8 +2,8 @@ var validator = require('validator');
 var PropertiesReader = require('properties-reader');
 var path = require('path');
 var properties = PropertiesReader(path.join(__dirname,'../config/application.properties'));
-var logManager = require('../config/logger.js');
-var logger = logManager.getLogger();
+//var logManager = require('../config/logger.js');
+//var logger = logManager.getLogger();
 module.exports = {
     apiKeyRegexp:/^[A-Z0-9\-']*$/,
     passwordRegexp:/^[a-zA-Z0-9\\_\-\\@\\#\\$\\%\\*\\+\\!]*$/,
