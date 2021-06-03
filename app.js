@@ -29,7 +29,7 @@ var logDirectory = path.join(__dirname, '/logs');
 fs.existsSync(logDirectory) || fs.mkdirSync(logDirectory);
 // create a rotating write stream
 const accessLogStream = rfs.createStream(path.join(__dirname,"/logs/access.log"), {
-    size: "10M", // rotate every 10 MegaBytes written
+    size: "50M", // rotate every 10 MegaBytes written
     interval: "1d", // rotate daily
     compress: "gzip" // compress rotated files
 });
